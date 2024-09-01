@@ -1,0 +1,25 @@
+private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        boolean valid = true;
+        if (txtUsername.getText().isEmpty() || txtPassword.getText().isEmpty()) 
+        {
+            JOptionPane.showMessageDialog(null, "Value cant be blank", "Login Form",
+                    JOptionPane.ERROR_MESSAGE);
+            if (valid) {
+                String Username = txtUsername.getText();
+                String Password = txtPassword.getText();
+
+                if (Username.equals("Manager") && Password.equals("1515")) 
+                {
+                    JOptionPane.showMessageDialog(rootPane, "Valid User", "Login FOrm",
+                            JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "Valid User", "Login FOrm",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
+       CityBookshop if2 = new CityBookshop();
+       if2.show();
+       
+       dispose();
+            }
+        }
+    }  
